@@ -9,7 +9,7 @@ import numpy as np
 data = pd.read_csv('data.csv', encoding='gbk')
 train_x = data[["2019年国际排名", "2018世界杯", "2015亚洲杯"]]
 df = pd.DataFrame(train_x)
-kmeans = KMeans(n_clusters=3)
+kmeans = KMeans(n_clusters=4)
 # 规范化到[0,1]空间
 min_max_scaler = preprocessing.MinMaxScaler()
 train_x = min_max_scaler.fit_transform(train_x)
