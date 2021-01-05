@@ -14,7 +14,7 @@ kmeans = KMeans(n_clusters=4)
 # 规范化到[0,1]空间
 min_max_scaler = preprocessing.MinMaxScaler()
 train_x = min_max_scaler.fit_transform(train_x)
-# kmeans算法
+# kmeans算法123
 kmeans.fit(train_x)
 predict_y = kmeans.predict(train_x)
 # 合并聚类结果，插入到原数据中
